@@ -39,4 +39,7 @@ jobs:
       # Get Flutter project dependencies
       - name: Get dependencies
         run: flutter pub get
+      - name: Android bundle
+        run: flutter build appbundle
+
 
