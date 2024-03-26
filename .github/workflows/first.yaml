@@ -1,11 +1,11 @@
-name: First action
-
-on: [push]
-
-jobs:
-    build:
-        runs-on: ubuntu-latest
-        
-        steps:
-          - name: Test steps
-            run: echo "Hello World"
+#name: First action
+#
+#on: [push]
+#
+#jobs:
+#    build:
+#        runs-on: ubuntu-latest
+#
+#        steps:
+#          - name: Test steps
+#            run: echo "Hello World"
