@@ -1,7 +1,7 @@
 # Name of the workflow
 name: Build
 
-  # Controls what will trigger the workflow.
+# Controls what will trigger the workflow.
 # Change it to your needs.
 on:
   # A new push to the "main" branch.
@@ -20,7 +20,7 @@ jobs:
   build_android:
     # Defines what operating system will be used for the actions.
     # For android, we will use Linux GitHub-Hosted Runner.
-    runs-on: ubuntu-22.04
+    runs-on: windows-latest
     # Defines what step should be passed for successful run
     steps:
       # Checkout to the selected branch
@@ -31,7 +31,7 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           # Define which stable flutter version should be used
-          flutter-version: "3.2.0"
+          flutter-version: "3.16.0"
           channel: 'stable'
           # Enables cache for flutter packages
           # Speed up the process
